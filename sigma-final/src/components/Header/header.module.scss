@@ -1,0 +1,123 @@
+.header {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  padding: 30px;
+  z-index: 100;
+  box-sizing: border-box;
+  &_basket {
+    border-radius: 19px;
+    padding: 5px 5px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.566);
+    align-items: center;
+    cursor: pointer;
+
+    div {
+      align-items: center;
+      width: 30px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      background-color: #274c5b;
+      border-radius: 180px;
+      height: 100%;
+      margin-right: 7px;
+    }
+  }
+  &_search {
+    background-color: #fafafa;
+    border-radius: 19px;
+    padding: 5px 10px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    input {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      height: 100%;
+    }
+    div {
+      align-items: center;
+      width: 30px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      background-color: #7eb693;
+      border-radius: 180px;
+    }
+  }
+  &_logo {
+    display: flex;
+    cursor: pointer;
+    img {
+      width: 46px;
+      margin-right: 10px;
+    }
+
+    &_text {
+      display: flex;
+      align-items: center;
+      color: #274c5b;
+      font-weight: 700;
+      font-size: 38px;
+      margin: 0;
+    }
+  }
+  &_menu {
+    color: #274c5b;
+    font-size: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+
+    li {
+      cursor: pointer;
+      &:hover {
+        color: #274c5ba6;
+      }
+    }
+  }
+  &_wrap {
+    // gap: 80px;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+  }
+}
+.user {
+  display: flex;
+}
+@media only screen and (max-width: 1000px) {
+  .header {
+    &_logo {
+      img {
+        width: 26px;
+        margin-right: 10px;
+      }
+
+      &_text {
+        font-size: 4vw;
+      }
+    }
+    &_menu {
+      display: none;
+    }
+    &_wrap {
+      // gap: 80px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (max-width: 490px) {
+  .header_logo {
+    display: none;
+  }
+}

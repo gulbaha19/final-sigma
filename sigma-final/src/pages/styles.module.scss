@@ -1,0 +1,53 @@
+.banner {
+  background-image: url("../assets/basket.png");
+  // width: 100%;
+  padding: 120px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 50px;
+  h3 {
+    margin: 0 auto;
+    color: #274c5b;
+    font-size: 70px;
+  }
+}
+.top {
+  padding-top: 150px;
+}
+.done {
+  padding-top: 150px;
+  h2 {
+    color: #274c5b;
+    font-size: 70px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.form_input_wrap {
+  span {
+    margin-right: 20px;
+  }
+}
+.table {
+  tr {
+    border-bottom: 1px solid black;
+    th {
+      padding: 15px 40px;
+      border-bottom: 1px solid black;
+    }
+    td {
+      border-bottom: 1px solid black;
+
+      cursor: pointer;
+    }
+  }
+}
+.bottom {
+  margin-bottom: 100px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}

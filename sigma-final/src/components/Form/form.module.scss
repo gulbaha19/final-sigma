@@ -1,0 +1,72 @@
+.form {
+  &_wrap {
+    :global(.css-q0jhri-MuiInputBase-root-MuiInput-root:before) {
+      border-bottom: none;
+      border-radius: 16px;
+    }
+    :global(
+        .css-q0jhri-MuiInputBase-root-MuiInput-root:hover:not(.Mui-disabled, .Mui-error):before
+      ) {
+      border-bottom: none;
+    }
+    :global(.css-q0jhri-MuiInputBase-root-MuiInput-root:after) {
+      border-bottom: none;
+    }
+    margin-bottom: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+  }
+  &_input {
+    background-color: white;
+    border: 1px solid #7eb693;
+    border-radius: 16px;
+    font-size: 18px;
+    padding: 5px 10px;
+    width: 30vw;
+    &_wrap {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      span {
+        margin-bottom: 10px;
+      }
+    }
+    &_message {
+      margin: 0 auto;
+      width: 64vw;
+      background-color: white;
+      border: 1px solid #7eb693 !important;
+      border-radius: 16px !important;
+      font-size: 18px !important;
+      height: 100px;
+      // padding: 5px 10px;
+      &_wrap {
+        display: flex;
+        // flex-direction: column;
+
+        span {
+          text-align: left;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  border-radius: 16px;
+  padding: 28px 39px;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.blue {
+  background-color: #274c5b;
+  border: none;
+  color: white;
+  &:hover {
+    background-color: #274c5b96;
+  }
+}

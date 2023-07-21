@@ -1,0 +1,41 @@
+.yellow {
+  background-color: #efd372;
+  border: none;
+  color: #274c5b;
+}
+.button {
+  border-radius: 16px;
+  padding: 28px 39px;
+  font-size: 20px;
+  font-weight: bold;
+  box-sizing: border-box;
+  align-items: center;
+  // display: flex;
+  span {
+    position: relative;
+    width: 21;
+    margin-left: 5px;
+    margin-top: 10px;
+    svg {
+      top: 3px;
+      position: absolute;
+    }
+  }
+}
+.blue {
+  background-color: #274c5b;
+  border: none;
+  color: white;
+  &:hover {
+    background-color: #274c5b96;
+  }
+}
+.white {
+  background: white;
+  border: 1px solid #274c5b;
+  box-sizing: border-box;
+  color: #274c5b;
+  &:hover {
+    background-color: #274c5b96;
+  }
+}

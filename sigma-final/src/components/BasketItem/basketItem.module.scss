@@ -1,0 +1,63 @@
+.basket_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  img {
+    max-width: 260px;
+    max-height: 150px;
+    object-fit: contain;
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &_title {
+      color: #274c5b;
+      font-size: 40px;
+    }
+    &_count {
+      display: flex;
+      align-items: center;
+      span {
+        padding: 20px 30px;
+        background-color: white;
+        border-radius: 16px;
+        border: 1px solid #274c5b;
+      }
+      p {
+        padding: 10px;
+        align-items: center;
+        display: flex;
+        margin: 0;
+        cursor: pointer;
+      }
+      &_delete {
+        background-color: #274c5b;
+        border-radius: 14px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: white;
+        &:hover {
+          background-color: #274c5bd3;
+        }
+      }
+    }
+  }
+}
+.discount {
+  color: #b8b8b8;
+  font-size: 15px;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.price {
+  color: #274c5b;
+  font-size: 30px;
+  font-weight: 600;
+  &_wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}

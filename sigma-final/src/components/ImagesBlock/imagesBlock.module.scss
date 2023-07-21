@@ -1,0 +1,34 @@
+.images {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f8f4;
+  padding: 100px 0;
+
+  &_box {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    img {
+      object-fit: contain;
+      max-width: 300px;
+      max-height: 300px;
+    }
+    p {
+      position: absolute;
+      background-color: #ffff;
+      color: #274c5b;
+      padding: 10px 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .images {
+    flex-direction: column;
+    &_box {
+      margin: 0 auto;
+    }
+  }
+}

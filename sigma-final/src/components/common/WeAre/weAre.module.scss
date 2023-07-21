@@ -1,0 +1,68 @@
+.we_are {
+  text-align: left;
+  position: relative;
+  img {
+    width: 50vw;
+  }
+  &_content {
+    position: absolute;
+    top: 50px;
+    left: 45vw;
+    background-color: white;
+    padding: 20px;
+    border-radius: 32px;
+    &_title {
+      text-align: left;
+      max-width: 500px;
+
+      p {
+        color: #7eb693;
+        font-family: "Yellowtail", cursive;
+        font-size: 36px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+      h3 {
+        font-size: 50px;
+        color: #274c5b;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+    &_subtitle {
+      max-width: 600px;
+      p {
+        color: #274c5b;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+      span {
+        color: #525c60;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .we_are {
+    img {
+      width: 100vw;
+    }
+    &_content {
+      left: 0;
+      &_title {
+        p {
+          font-size: 2vh;
+        }
+        h3 {
+          font-size: 3vh;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .we_are {
+    margin-bottom: 300px;
+  }
+}
